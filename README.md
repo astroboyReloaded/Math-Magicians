@@ -10,7 +10,7 @@
 npx eslint "**/*.{js,jsx}"
 ```
 
--To get a review of the CSS, run:
+- To get a review of the CSS, run:
 ```hs
 npx stylelint "**/*.{css,scss}"
 ```

@@ -66,8 +66,12 @@
 
 ### Prerequisites
 
-- [HTML](https://www.w3.org/html/) + [CSS](https://www.w3.org/Style/CSS/Overview.en.html) + [JavaScript](https://www.javascript.com/) [React.js](https://react.dev/)
-
+- [HTML](https://www.w3.org/html/) + [CSS](https://www.w3.org/Style/CSS/Overview.en.html) + [JavaScript](https://www.javascript.com/) + [React.js](https://react.dev/)
+- Make sure you have **Node.js** installed. Check this by running:
+```hs
+node -v
+```
+If you have it, it will display the Node version you have, if not, go to [this website](https://nodejs.org/en) to download it. I recomend you get the "Recomended For Most Users" version.
 ### Setup
 
 - If you wish to work from this project by editing it's code:

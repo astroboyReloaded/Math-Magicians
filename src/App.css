@@ -13,7 +13,7 @@
   color: white;
 }
 
-.Keys {
+.Keypad {
   display: flex;
   flex-wrap: wrap;
 }

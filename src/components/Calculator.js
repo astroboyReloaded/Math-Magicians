@@ -1,14 +1,19 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 // import Screen from './screen';
 import Keypad from './keypad';
 // import operate from '../logic/operate';
-import calculate from '../logic/calculate';
+// import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const state = {
+  const [state, setState] = useState({
     total: '3',
     next: '6',
     operation: '+',
+  });
+
+  const handleClick = (key) => {
+    setState({});
+    alert(key);
   };
 
   return (
@@ -16,7 +21,9 @@ const Calculator = () => {
       <div className="Screen">
         {`${state.total + state.operation + state.next}`}
       </div>
-      <Keypad onClick={() => calculate(state)} />
+      <div className="Keypad">
+        <Keypad keyClick={handleClick} />
+      </div>
     </div>
   );
 };

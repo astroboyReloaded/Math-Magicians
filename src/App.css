@@ -1,3 +1,7 @@
+.quoteContainer {
+  flex-basis: 36%;
+}
+
 .calculator {
   display: flex;
   flex-wrap: wrap;

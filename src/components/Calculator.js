@@ -12,18 +12,17 @@ const Calculator = () => {
   });
 
   const handleClick = (key) => {
-    setState({});
-    alert(key);
+    setState({ ...state, total: key });
   };
 
   return (
     <div className="calculator">
       <div className="Screen">
-        {`${state.total + state.operation + state.next}`}
+        {`${state.total} 
+        ${state.operation} 
+        ${state.next}`}
       </div>
-      <div className="Keypad">
-        <Keypad keyClick={handleClick} />
-      </div>
+      <Keypad keyClick={handleClick} />
     </div>
   );
 };

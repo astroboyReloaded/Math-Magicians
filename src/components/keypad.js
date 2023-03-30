@@ -1,74 +1,22 @@
 import PropTypes from 'prop-types';
 import keyNames from './keysDb';
 
-const Keypad = ({ keyClick }) => {
-  alert(keyNames);
-  return (
-    <>
+const Keypad = ({ keyClick }) => (
+  <div className="Keypad">
+    {keyNames.map((keyName) => (
       <button
-        onClick={() => keyClick('AC')}
+        onClick={() => keyClick(keyName)}
         type="button"
-        className="key number"
+        className={`key ${
+          ['÷', '×', '-', '+', '='].includes(keyName) && 'key-operator'
+        } ${keyName === '0' && 'zero'}`}
+        key={keyName}
       >
-        AC
+        {keyName}
       </button>
-      <button type="button" className="key">
-        +/-
-      </button>
-      <button type="button" className="key">
-        %
-      </button>
-      <button type="button" className="key key-operator">
-        ÷
-      </button>
-      <button type="button" className="key">
-        7
-      </button>
-      <button type="button" className="key">
-        8
-      </button>
-      <button type="button" className="key">
-        9
-      </button>
-      <button type="button" className="key key-operator">
-        ×
-      </button>
-      <button type="button" className="key">
-        4
-      </button>
-      <button type="button" className="key">
-        5
-      </button>
-      <button type="button" className="key">
-        6
-      </button>
-      <button type="button" className="key key-operator">
-        -
-      </button>
-      <button type="button" className="key">
-        1
-      </button>
-      <button type="button" className="key">
-        2
-      </button>
-      <button type="button" className="key">
-        3
-      </button>
-      <button type="button" className="key key-operator">
-        +
-      </button>
-      <button type="button" className="key  zero">
-        0
-      </button>
-      <button type="button" className="key">
-        .
-      </button>
-      <button type="button" className="key key-operator">
-        =
-      </button>
-    </>
-  );
-};
+    ))}
+  </div>
+);
 
 Keypad.propTypes = {
   keyClick: PropTypes.func.isRequired,

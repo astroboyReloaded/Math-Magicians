@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import calculate from '../logic/calculate';
 // import Screen from './screen';
 import Keypad from './keypad';
 // import operate from '../logic/operate';
@@ -12,7 +13,7 @@ const Calculator = () => {
   });
 
   const handleClick = (key) => {
-    setState({ ...state, total: key });
+    setState({ ...state, ...calculate(state, key) });
   };
 
   return (

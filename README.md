@@ -56,7 +56,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Basic setup**
+- Components.
+- Events.
+- Fetch data from API.
 
 <!-- LIVE DEMO -->
 
@@ -113,9 +115,6 @@ npx stylelint "**/*.{css,scss}"
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Components.
-- Events.
-- Fetch data from API.
 - Full website.
 - Tests.
 

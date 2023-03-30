@@ -8,7 +8,7 @@ const Keypad = ({ keyClick }) => (
         onClick={() => keyClick(keyName)}
         type="button"
         className={`key ${
-          ['÷', '×', '-', '+', '='].includes(keyName) && 'key-operator'
+          ['÷', 'x', '-', '+', '='].includes(keyName) && 'key-operator'
         } ${keyName === '0' && 'zero'}`}
         key={keyName}
       >

@@ -7,9 +7,9 @@ import Keypad from './keypad';
 
 const Calculator = () => {
   const [state, setState] = useState({
-    total: '3',
-    next: '6',
-    operation: '+',
+    total: '0',
+    next: null,
+    operation: null,
   });
 
   const handleClick = (key) => {
@@ -19,9 +19,9 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <div className="Screen">
-        {`${state.total} 
-        ${state.operation} 
-        ${state.next}`}
+        {`${!state.total ? '' : state.total} 
+        ${!state.operation ? '' : state.operation} 
+        ${!state.next ? '' : state.next}`}
       </div>
       <Keypad keyClick={handleClick} />
     </div>

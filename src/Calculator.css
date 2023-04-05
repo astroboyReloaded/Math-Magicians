@@ -1,14 +1,19 @@
-.quoteContainer {
-  flex-basis: 36%;
+.calcContainer {
   display: flex;
-  text-align: center;
-  align-items: center;
+  padding-top: 9vh;
+  height: 45%;
+  width: 100%;
 }
 
 .calculator {
   display: flex;
   flex-wrap: wrap;
-  width: 21rem;
+  width: 27%;
+  margin-inline: 18vw;
+}
+
+h2 {
+  margin: 0;
 }
 
 .Screen {

@@ -5,10 +5,53 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  padding: 1vw;
 }
 
 #root {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: space-around;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: blue;
+  padding-inline: 9px;
+  font-size: 1.2rem;
+}
+
+.division {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+h1 {
+  width: fit-content;
+  font-size: 2.7rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  padding-block: 3vh;
+}
+
+p {
+  font-size: 1.2rem;
 }

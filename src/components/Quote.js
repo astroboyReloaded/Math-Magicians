@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import '../Quote.css';
 
 const Quote = () => {
   const [quote, setQuote] = useState('');
@@ -30,11 +31,11 @@ const Quote = () => {
   }, []);
 
   return (
-    <section className="quoteContainer">
+    <main className="quoteContainer">
       {isLoading && 'Loading..'}
       {hasError && 'Ups! Something went wrong...'}
-      {quote}
-    </section>
+      <h2>{quote}</h2>
+    </main>
   );
 };
 

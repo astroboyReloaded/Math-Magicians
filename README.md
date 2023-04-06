@@ -64,7 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Live Demo Link comming soon!
+- [Live Demo](https://math-magicians-ib6t.onrender.com/)
 
 ### Prerequisites
 
